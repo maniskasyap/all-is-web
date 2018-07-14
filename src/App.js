@@ -1,16 +1,20 @@
 import React, { Component } from "react";
 // import Button from "antd/lib/button";
 // import { Button } from "antd";
-import { Layout } from "antd";
+// import { Layout } from "antd";
+import MkIntro from "./mk-intro/mk-intro";
 import "./App.css";
+// import "./fonts/Raleway-Black.ttf";
+// import "./fonts/Raleway-SemiBold.ttf";
 
-const { Header, Footer, Sider, Content } = Layout;
+// const { Header, Footer, Sider, Content } = Layout;
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        this will contain stuff - coming soon !!!
+        <MkIntro />
+        {/* this will contain stuff - coming soon !!!
         <Layout>
           <Header>header</Header>
           <Layout>
@@ -19,7 +23,7 @@ class App extends Component {
             <Sider>right sidebar</Sider>
           </Layout>
           <Footer>footer</Footer>
-        </Layout>
+        </Layout> */}
         {/* <Button type="primary">Button</Button> */}
         {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />

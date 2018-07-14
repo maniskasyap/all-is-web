@@ -1,0 +1,11 @@
+.intro {
+  background-color: #262935;
+  height: 100vh;
+  font-size: 32pt;
+  color: #fff;
+}
+
+.intro .intro-text .intro-text__name {
+  font-family: 'Raleway-semibold';
+  color: #e31b6d;
+}
