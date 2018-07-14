@@ -4,8 +4,8 @@ import React, { Component } from "react";
 // import { Layout } from "antd";
 import MkIntro from "./mk-intro/mk-intro";
 import "./App.css";
-import "./fonts/Raleway-Black.ttf";
-import "./fonts/Raleway-SemiBold.ttf";
+// import "./fonts/Raleway-Black.ttf";
+// import "./fonts/Raleway-SemiBold.ttf";
 
 // const { Header, Footer, Sider, Content } = Layout;
 

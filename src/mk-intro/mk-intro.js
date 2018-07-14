@@ -6,7 +6,7 @@ class MkIntro extends Component {
     return (
       <div className="intro flex flex-col flex-center flex-center-90">
         <div className="intro-text">
-          Hello, I am <span className="intro-text__name"> Manish</span>
+          Hello, I'm <span className="intro-text__name"> Manish</span>
         </div>
         <div>I'm a full-stack web developer.</div>
       </div>
