@@ -5,6 +5,11 @@
   color: #fff;
 }
 
+.intro .intro-text {
+  z-index: 1;
+  text-align: center;
+}
+
 .intro .intro-text .intro-text__name {
   font-family: "Raleway-semibold";
   color: #e31b6d;
