@@ -14,26 +14,20 @@ class MkSpace extends Component {
     this.spacePaper.setup({ bgcolor: "#252934", resize: true });
     this.formPencil = this.spacePaper.getForm();
     var pts = undefined;
-    // animation
-    this.spacePaper.add((time, ftime) => {
-      if (!pts) pts = Create.distributeRandom(this.spacePaper.innerBound, 100);
-
-      let t = this.spacePaper.pointer;
-      pts.sort(
-        (a, b) => a.$subtract(t).magnitudeSq() - b.$subtract(t).magnitudeSq()
-      );
-
-      this.formPencil.fillOnly("#fff").points(pts, 1, "circle");
-      // this.formPencil.fill("#f03").point(pts[0], 10, "circle");
-      // this.formPencil.strokeOnly("#f03", 2).line([pts[0], this.spacePaper.pointer]);
+    this.spacePaper.add({
+      start: (bound, space) => {
+        if (!pts) pts = Create.distributeRandom(space.innerBound, 150);
+      },
+      animate: (time, ftime, space) => {
+        let t = this.spacePaper.pointer;
+        pts.sort(
+          (a, b) => a.$subtract(t).magnitudeSq() - b.$subtract(t).magnitudeSq()
+        );
+        this.formPencil.fillOnly("#fff").points(pts, 0.5, "circle");
+        let ten = pts.slice(0, 10);
+        this.formPencil.fillOnly("#fff").points(ten, 1.5, "circle");
+      }
     });
-
-    // this.spacePaper.add((time, ftime) => {
-    //   let radius = Num.cycle((time % 1000) / 1000) * 20;
-    //   this.formPencil
-    //     .fill("#f00")
-    //     .point(this.spacePaper.pointer, radius, "circle");
-    // });
     this.spacePaper.bindMouse();
     this.spacePaper.play();
   };
