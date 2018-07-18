@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { CanvasSpace, Pt, Group, Num, Create } from "pts";
+import { CanvasSpace, Create } from "pts";
 import "./mk-space.css";
 
 class MkSpace extends Component {
