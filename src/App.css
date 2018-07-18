@@ -10,6 +10,7 @@
 
 body {
   font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
 }
 
 .flex {
@@ -26,4 +27,16 @@ body {
 
 .flex-center {
   justify-content: center;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
 }
