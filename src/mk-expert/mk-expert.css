@@ -1,3 +1,25 @@
 #expert {
-    height: 400px;
+  height: 400px;
+}
+
+.expert-items {
+  display: none;
+}
+
+.expert-item {
+  position: absolute;
+  width: 33.3%;
+  overflow: hidden;
+}
+
+.expert-item.item-1 {
+    left: 0;
+}
+
+.expert-item.item-2 {
+    left: 33.3%;
+}
+
+.expert-item.item-3 {
+    left: 66.6%;
 }
