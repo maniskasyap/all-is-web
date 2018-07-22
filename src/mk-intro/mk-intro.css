@@ -1,3 +1,8 @@
+#home {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
 .intro {
   background-color: #262935;
   height: 100vh;
