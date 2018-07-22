@@ -1,5 +1,6 @@
 #expert {
-  height: 400px;
+  /* height: 400px; */
+  position: relative;
 }
 
 .expert-items {
@@ -10,16 +11,21 @@
   position: absolute;
   width: 33.3%;
   overflow: hidden;
+  height: 600px;
+  top: 0;
 }
 
 .expert-item.item-1 {
     left: 0;
-}
+    background-color: #f00;
+  }
 
-.expert-item.item-2 {
+  .expert-item.item-2 {
     left: 33.3%;
-}
+    background-color: #0f0;
+  }
 
-.expert-item.item-3 {
+  .expert-item.item-3 {
     left: 66.6%;
+    background-color: #00f;
 }

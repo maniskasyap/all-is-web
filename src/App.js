@@ -5,8 +5,6 @@ import React, { Component } from "react";
 import MkIntro from "./mk-intro/mk-intro";
 import MkExpert from "./mk-expert/mk-expert";
 import "./App.css";
-// import "./fonts/Raleway-Black.ttf";
-// import "./fonts/Raleway-SemiBold.ttf";
 
 // const { Header, Footer, Sider, Content } = Layout;
 
@@ -16,6 +14,7 @@ class App extends Component {
       <div className="App">
         <MkIntro />
         <MkExpert />
+        <div style={{ height: "1500px", backgroundColor: "yellow", position: "relative" }} />
       </div>
     );
   }

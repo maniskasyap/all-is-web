@@ -9,12 +9,33 @@ class MkExpert extends Component {
       <section id="expert">
         <MkScrollPos>
           {posY => (
-            <div className={"expert-items " + (posY > 0 ? "fixed" : "")}>
+            <div
+              className={
+                "expert-items " +
+                (posY > 0 && posY < 600 ? "fixed" : "") +
+                (posY > 600 ? "relative" : "")
+              }
+            >
               {/* <div className="flex"> */}
-                {/* <h1>{posY}</h1> */}
-                <div style={{top: posY}} className="expert-item item-1">one</div>
-                <div style={{top: posY}} className="expert-item item-2">two</div>
-                <div style={{top: posY}} className="expert-item item-3">three</div>
+              {/* <h1>{posY}</h1> */}
+              <div
+                style={{ top: -600 + posY < 0 ? -600 + posY : 0 }}
+                className="expert-item item-1"
+              >
+                one
+              </div>
+              <div
+                style={{ top: 600 - posY > 0 ? 600 - posY : 0 }}
+                className="expert-item item-2"
+              >
+                two
+              </div>
+              <div
+                style={{ top: -600 + posY < 0 ? -600 + posY : 0 }}
+                className="expert-item item-3"
+              >
+                three
+              </div>
               {/* </div> */}
             </div>
           )}
