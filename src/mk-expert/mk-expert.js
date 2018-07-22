@@ -18,13 +18,22 @@ class MkExpert extends Component {
             >
               {/* <div className="flex"> */}
               {/* <h1>{posY}</h1> */}
-              <div style={{ top: -600 + posY }} className="expert-item item-1">
+              <div
+                style={{ top: -600 + posY < 0 ? -600 + posY : 0 }}
+                className="expert-item item-1"
+              >
                 one
               </div>
-              <div style={{ top: 600 - posY }} className="expert-item item-2">
+              <div
+                style={{ top: 600 - posY > 0 ? 600 - posY : 0 }}
+                className="expert-item item-2"
+              >
                 two
               </div>
-              <div style={{ top: -600 + posY }} className="expert-item item-3">
+              <div
+                style={{ top: -600 + posY < 0 ? -600 + posY : 0 }}
+                className="expert-item item-3"
+              >
                 three
               </div>
               {/* </div> */}

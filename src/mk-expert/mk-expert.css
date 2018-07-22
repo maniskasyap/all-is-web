@@ -12,6 +12,7 @@
   width: 33.3%;
   overflow: hidden;
   height: 600px;
+  top: 0;
 }
 
 .expert-item.item-1 {
