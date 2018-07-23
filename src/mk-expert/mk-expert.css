@@ -11,21 +11,41 @@
   position: absolute;
   width: 33.3%;
   overflow: hidden;
-  height: 600px;
+  height: 650px;
   top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expert-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  /* background-color: #FFC6C5; */
+  background-color: #777777;
 }
 
 .expert-item.item-1 {
-    left: 0;
-    background-color: #f00;
-  }
+  left: 0;
+  /* background-color: #f00; */
+  background-image: url(./ranchi.jpg);
+}
 
-  .expert-item.item-2 {
-    left: 33.3%;
-    background-color: #0f0;
-  }
+.expert-item.item-2 {
+  left: 33.3%;
+  /* background-color: #0f0; */
+  background-image: url(./sydney.jpg);
+}
 
-  .expert-item.item-3 {
-    left: 66.6%;
-    background-color: #00f;
+.expert-item.item-3 {
+  left: 66.6%;
+  /* background-color: #00f; */
+  background-image: url(./dubai.jpg);
 }
