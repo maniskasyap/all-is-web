@@ -24,7 +24,7 @@ class MkScrollPos extends Component {
   };
 
   render() {
-    return <div className="relative" style={{ height: 600 }}>{this.props.children(this.state.position)}</div>;
+    return <div className="relative" style={{ height: 650 }}>{this.props.children(this.state.position)}</div>;
   }
 }
 

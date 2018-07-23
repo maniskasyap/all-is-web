@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import MkScrollPos from "../common/mk-scroll-pos";
+import MkField from "../mk-field/mk-field";
 
 import "./mk-expert.css";
+
+// import sydney from "./sydney.jpg";
 
 class MkExpert extends Component {
   render() {
@@ -22,19 +25,28 @@ class MkExpert extends Component {
                 style={{ top: -600 + posY < 0 ? -600 + posY : 0 }}
                 className="expert-item item-1"
               >
-                one
+                <MkField
+                  title="Technical Consultancy"
+                  description="Leverage latest tech to increase efficiency and unify processes."
+                />
               </div>
               <div
                 style={{ top: 600 - posY > 0 ? 600 - posY : 0 }}
                 className="expert-item item-2"
               >
-                two
+              <MkField
+                  title="Best Practices"
+                  description="Promote adoption and use of industry best practices."
+                />
               </div>
               <div
                 style={{ top: -600 + posY < 0 ? -600 + posY : 0 }}
                 className="expert-item item-3"
               >
-                three
+              <MkField
+                  title="Agile Working"
+                  description="Get more done with clear visibility of progress in teams."
+                />
               </div>
               {/* </div> */}
             </div>
