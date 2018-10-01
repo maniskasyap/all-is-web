@@ -35,17 +35,17 @@
 .expert-item.item-1 {
   left: 0;
   /* background-color: #f00; */
-  background-image: url(./ranchi.jpg);
+  background-image: url(./ranchi.jpeg);
 }
 
 .expert-item.item-2 {
   left: 33.3%;
   /* background-color: #0f0; */
-  background-image: url(./sydney.jpg);
+  background-image: url(./sydney.jpeg);
 }
 
 .expert-item.item-3 {
   left: 66.6%;
   /* background-color: #00f; */
-  background-image: url(./dubai.jpg);
+  background-image: url(./dubai.jpeg);
 }
